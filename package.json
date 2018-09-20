@@ -1,0 +1,19 @@
+{
+  "name": "inbox",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "mocha"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/laukik/Inbox.git"
+  },
+  "author": "laukik",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/laukik/Inbox/issues"
+  },
+  "homepage": "https://github.com/laukik/Inbox#readme"
+}
