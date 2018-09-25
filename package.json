@@ -15,5 +15,13 @@
   "bugs": {
     "url": "https://github.com/laukik/Inbox/issues"
   },
-  "homepage": "https://github.com/laukik/Inbox#readme"
+  "homepage": "https://github.com/laukik/Inbox#readme",
+  "dependencies": {
+    "ganache-cli": "^6.1.8",
+    "mocha": "^5.2.0",
+    "npm": "^6.4.1",
+    "solc": "^0.4.25",
+    "truffle-hdwallet-provider": "0.0.6",
+    "web3": "^1.0.0-beta.36"
+  }
 }

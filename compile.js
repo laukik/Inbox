@@ -12,4 +12,6 @@ const code = fs.readFileSync(solPath, 'utf8');
 // Complie the Solidity file via solc..
 // and Export the contract for Inbox
 // Contract  to acces the ABI
+
+//console.log(solc.compile(code, 1).contracts[':Inbox']);
 module.exports = solc.compile(code, 1).contracts[':Inbox'];
