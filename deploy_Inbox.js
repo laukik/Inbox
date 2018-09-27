@@ -13,7 +13,7 @@ const web3 = new Web3(provider);
 const deploy = async ()=> {
     const accounts = await web3.eth.getAccounts();
     console.log(' Deploying contract via account ; ' + accounts[0]);
-    const inbox = await new web3.eth.Contract(JSON.parse(interface)).deploy({ data : '0x' + bytecode}).send({ from : accounts[0], gas : 2000000});
+    const inbox = await new web3.eth.Contract(JSON.parse(interface)).deploy({ data : '0x' + bytecode, arguments : ['Start']}).send({ from : accounts[0], gas : 2000000});
     const address = inbox.options.address;
     console.log('contract deployed on address ' + address);
 };

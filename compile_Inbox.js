@@ -6,7 +6,7 @@ const fs = require('fs');
 const solc = require('solc');
 
 //Get to the File to load the source..
-const solPath = path.resolve( __dirname, 'contracts', 'Lottery.sol' );
+const solPath = path.resolve( __dirname, 'contracts', 'Inbox.sol' );
 const code = fs.readFileSync(solPath, 'utf8');
 
 // Complie the Solidity file via solc..
@@ -14,4 +14,4 @@ const code = fs.readFileSync(solPath, 'utf8');
 // Contract  to acces the ABI
 
 //console.log(solc.compile(code, 1).contracts[':Inbox']);
-module.exports = solc.compile(code, 1).contracts[':Lottery'];
+module.exports = solc.compile(code, 1).contracts[':Inbox'];
